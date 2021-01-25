@@ -27,6 +27,8 @@ func translate(phrase shortForm: String) -> String {
         return "totally awesome"
     } else if phrase == "TTYL" {
         return "talk to you later"
+    }else{
+        return phrase
     }
 
 }
@@ -34,3 +36,37 @@ func translate(phrase shortForm: String) -> String {
 // OUTPUT
 let output = translate(phrase: phrase)
 print(output)
+
+func TXTMSG (of shortForm: String) -> String {
+             if shortForm == "LOL"{
+return "Laugh Out Loud"
+             } else if shortForm == "CU" {
+                return "See you"
+             }else if shortForm == ":-)"{
+                return "I'm Happy"
+             }else if shortForm == ":-("{
+                return "I'm unhappy"
+             }else if shortForm == ";-)"{
+                return "wink"
+             }else if shortForm == ":-P"{
+                return "Stick out my tongue"
+             }else if shortForm == "('.')"{
+                return "Sleepy"
+             }else if shortForm == "TA"{
+                return "totally awsome"
+             }else if shortForm == "CCC"{
+                return "Canadian Chese Company"
+             }else if shortForm == "CUZ"{
+                return "because"
+             }else if shortForm == "TY"{
+                return "Thank you"
+             }else if shortForm == "YW"{
+                return "your welcome"
+             }else if shortForm == "TTYL"{
+                return "talk to you later"
+             }else{
+                return phrase
+             }
+}
+let output1 = TXTMSG (of: phrase)
+print(output1)
