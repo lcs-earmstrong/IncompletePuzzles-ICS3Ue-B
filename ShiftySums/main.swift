@@ -13,21 +13,25 @@ import Foundation
 print("Shifty Sums")
 print("===========")
 
-// INPUT
-
-// Get the number to be shifted
-let n = Int(readLine()!)!
-
-// How many times should we shift?
-let k = 3
-
+let n = 0
+let k = 1
 // PROCESS
-
-// Shift the given number "k" number of times
-var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
-
-// OUTPUT
-print(output)
+func shift(n: Int, k: Int) -> Int{
+    
+     var output = n
+    if k == 0 {
+        output = n
+    } else {
+    for i in 1...k {
+        print("i is \(i)")
+        var toAdd = n
+        for _ in 1...i {
+            toAdd *= 10
+        }
+        output += toAdd
+    }
+    }
+return output
+}
+let answer = shift(n: n, k: k)
+print(answer)
