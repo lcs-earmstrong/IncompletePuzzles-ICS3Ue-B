@@ -65,7 +65,7 @@ class ISpeakTXTMSGTests: XCTestCase {
         print("When shortform is:\t\t\t\(shortForm)\nThe longform should be:\t\t\(longForm)\n")
         
         // Actually run the test
-        XCTAssertEqual(longForm, translate(phrase: shortForm))
+        XCTAssertEqual(longForm, translate (phrase: shortForm))
     }
 
     func testCaseB() {
@@ -86,7 +86,7 @@ class ISpeakTXTMSGTests: XCTestCase {
         print("When shortform is:\t\t\t\(shortForm)\nThe longform should be:\t\t\(longForm)\n")
         
         // Actually run the test
-        XCTAssertEqual(longForm, translate(phrase: shortForm))
+        XCTAssertEqual(longForm, translate (phrase: shortForm))
     }
 
     func testCaseC() {

@@ -20,28 +20,27 @@ print("Enter phrase> ", terminator: "")
 let phrase = readLine()!
 
 // PROCESS
-func translate(phrase shortForm: String) -> String {
 
     // NOTE: Instead of an "if statement" consider using a different type of Swift structure to handle all the different possible cases...
-    if phrase == "TA" {
-        return "totally awesome"
-    } else if phrase == "TTYL" {
-        return "talk to you later"
-    }else{
-        return phrase
-    }
 
-}
+        // If the shortForm is not recognized, just return what was provided as input
 
-// OUTPUT
-let output = translate(phrase: phrase)
-print(output)
 
-func TXTMSG (of shortForm: String) -> String {
+//PROCESS
+// parameters are inputs to the function.
+// parameters are seperated by comas.
+// A parameter can have an external and internal name.
+// In this case, "translate" has one parameter.
+// It's external name is "phrase"
+// It's internal name is "shortForm"
+
+
+
+func translate (phrase shortForm: String) -> String {
              if shortForm == "LOL"{
 return "Laugh Out Loud"
              } else if shortForm == "CU" {
-                return "See you"
+                return "see you"
              }else if shortForm == ":-)"{
                 return "I'm Happy"
              }else if shortForm == ":-("{
@@ -53,9 +52,9 @@ return "Laugh Out Loud"
              }else if shortForm == "('.')"{
                 return "Sleepy"
              }else if shortForm == "TA"{
-                return "totally awsome"
+                return "totally awesome"
              }else if shortForm == "CCC"{
-                return "Canadian Chese Company"
+                return "Canadian Cheese Champion"
              }else if shortForm == "CUZ"{
                 return "because"
              }else if shortForm == "TY"{
@@ -65,8 +64,14 @@ return "Laugh Out Loud"
              }else if shortForm == "TTYL"{
                 return "talk to you later"
              }else{
-                return phrase
+                return shortForm
              }
 }
-let output1 = TXTMSG (of: phrase)
-print(output1)
+// OUTPUT
+// Here, we are at the "call site"
+// This is where a function is "called" or invoked
+// The external parameter name shows at the call site
+// What we "pass in" for a parameter is refferred to as the "argument".
+// Parameter == question. Argument == answer
+let output = translate (phrase: phrase)
+print(output)
