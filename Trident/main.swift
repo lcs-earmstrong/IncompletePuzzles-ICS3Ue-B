@@ -26,38 +26,50 @@ print("   ", terminator: "")
 let s = Int(readLine()!)!
 
 
-print("Enter Handle Length")
+print("Enter handle length")
 print("   ", terminator: "")
 let h = Int(readLine()!)!
 
+// process
+func drawTrident(tineLength t: Int,
+                 tineSpacing s: Int,
+                 handleLength h: Int) -> String {
+    
+    //Create a variable name to store the output
+    var output = ""  // empty string to start
+    
+    
+    for _ in 1...t{
+
+    // draw the first line of all three tines with space between
+
+    for _ in 1...3 {
+        // print star
+        output += "*"
+
+        // print the spaces
+        for _ in 1...s{
+            output += "*"
+        }
+
+    }
+        output += "\n"
+
+    }
+
+// Give back the output (return it)
+    return output
+
+}
 
 // OUTPUT
+// Call the function - invoke it
+let programOutput = drawTrident(tineLength: t, tineSpacing: s, handleLength: h)
+// Actually show the output in the console
+print(programOutput)
 
 // draw all the tines!
 
-for _ in 1...t{
-
-// draw the first line of all three tines with space between
-
-for _ in 1...3 {
-    // print star
-    print("*",terminator:"")
-
-    // print the spaces
-    for _ in 1...s{
-        print("  ",terminator:"")
-    }
-
-}
-
-// Row complete... go to the next line
-    
-    // the \n character sequence
-    // pushes content down to the next line
-    
-    print("\n", terminator: "")
-
-}
 
 for _ in 1...1 {
     print("*******", terminator:"")
