@@ -71,10 +71,6 @@ print(programOutput)
 // draw all the tines!
 
 
-for _ in 1...1 {
-    print("*******", terminator:"")
-    print("\n", terminator: "")
-}
 
 
 for _ in 1...h{
