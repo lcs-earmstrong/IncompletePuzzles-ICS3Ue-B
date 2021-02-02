@@ -21,6 +21,8 @@ print("=============")
 // INPUT
 
 
+
+
 var day = 0
 while true {
     
@@ -127,3 +129,15 @@ let output = compareCosts(day: day,
                           evening: evening,
                           weekend: weekend)
 print(output)
+
+
+// This is how to call the function in the extension.swift file
+// Get daytime minutes
+//var day = Int.collectInput(withPrompt: "Number of daytime minutes? ",
+                      //     minimum: 0,
+                        //   maximum: nil)
+
+// Get evening minutes
+//var evening = Int.collectInput(withPrompt: "Number of evening minutes? ",
+                          //     minimum: 0,
+                            //   maximum: nil)
