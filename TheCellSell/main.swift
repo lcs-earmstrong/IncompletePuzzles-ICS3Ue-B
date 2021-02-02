@@ -20,6 +20,7 @@ print("=============")
 
 // INPUT
 
+
 var day = 0
 while true {
     
