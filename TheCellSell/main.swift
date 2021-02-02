@@ -20,44 +20,19 @@ print("=============")
 
 // INPUT
 
+// Get daytime minutes
+var day = Int.collectInput(withPrompt: "Number of daytime minutes? ",
+                           minimum: 0,
+                           maximum: nil)
 
-
-
-var day = 0
-while true {
-    
-    // Prompt the user
-    print("Number of daytime minutes? ")
-    
-    // Collect input
-    guard let givenInput = readLine() else {
-        continue
-    }
-    
-    // Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    // Check that the value is positive
-    guard givenInteger > 0 else {
-        continue
-    }
-    
-    // Assign the given integer to our "day" variable
-    day = givenInteger
-    
-    // Stop the loop
-    break
-    
-}
 // Get evening minutes
-print("Number of evening minutes?")
-let evening = Int(readLine()!)!
+var evening = Int.collectInput(withPrompt: "Number of evening minutes? ",
+                               minimum: 0,
+                               maximum: nil)
 
-// Get weekend minutes
-print("Number of weekend minutes?")
-let weekend = Int(readLine()!)!
+var weekend = Int.collectInput(withPrompt: "Number of weekend minutes? ",
+                               minimum: 0,
+                               maximum: nil)
 
 // INPUT
 
